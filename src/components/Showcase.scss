@@ -44,3 +44,18 @@ position: relative;
         top: 0;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .showcase-wrapper{
+        padding: 2em;
+        .live-project-wrapper {
+            display: block;
+            .project {
+                padding: 1em 0.5em;
+                .framework {
+                    right: 1em;
+                }
+            }
+        }
+    }
+}

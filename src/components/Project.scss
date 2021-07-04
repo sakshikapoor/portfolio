@@ -57,3 +57,18 @@
         }
     }
 }
+
+@media screen and (max-width: 767px) {
+    .main-project-wrapper {
+        padding: 2em;    
+        padding-right: 0px;
+        .my-project-heading {
+            .projects-container {
+                .project-wrapper {
+                    padding: 0.5em;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

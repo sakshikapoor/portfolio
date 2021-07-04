@@ -26,3 +26,21 @@
     }
 
 }
+
+
+@media screen and (max-width: 767px) {
+    .aboutme-wrapper {
+        display: block;
+        .left-container {
+            margin: 0px;
+            padding: 2em;
+            width: 80%;
+            .main-heading {
+                margin: 0;
+                padding: 1em 0;
+                
+            }
+        }
+
+    }
+}

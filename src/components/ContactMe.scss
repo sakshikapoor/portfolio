@@ -34,3 +34,13 @@
         text-decoration: underline;
     }
 }
+
+@media screen and (max-width: 767px) {
+    .footer-container {
+        padding: 2em;
+    }
+    .resume {
+        text-decoration: underline;
+        font-weight: 600;
+    }
+}
