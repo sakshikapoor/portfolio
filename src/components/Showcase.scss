@@ -1,0 +1,46 @@
+.showcase-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em;
+
+    .my-showcase-heading {
+        text-align: left;
+        margin-left: 0.5em;
+        width: fit-content;
+        cursor: pointer;
+        &:hover {
+            color: rgb(253, 197, 136);
+        }
+    }
+    .live-project-wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        padding: 2em 0em;
+        background: rgba(222, 23, 108, 0.1);
+    }
+}
+.project {
+position: relative;
+
+    .project-image {
+        max-height: 10em;
+        width: 15em;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform .2s;
+        &:hover {
+            transform: scale(1.2); 
+            z-index: 1;
+        }
+    }
+
+    .project-image:hover + .project-name {
+        visibility: hidden; 
+    }
+
+    .framework {
+        position: absolute;
+        right: 5em;
+        top: 0;
+    }
+}

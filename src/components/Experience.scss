@@ -1,0 +1,65 @@
+.main-experience-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em;
+
+    .my-experience-heading {
+        text-align: left;
+        margin-left: 0.5em;
+        width: fit-content;
+        cursor: pointer;
+        &:hover {
+            color: rgb(253, 197, 136);
+        }
+    }
+
+    .experience-wrapper {
+        display: grid;
+        grid-template-columns: 20px auto auto;
+        text-align: left;
+        margin: 2em;
+        .right-container {
+            margin: 0 2em;
+            h2 {
+                margin-top: 0px;
+            }
+            .timeline {
+                color: #d5d2fb;
+                margin: 1.25em 0;
+            }
+            &:hover {
+                cursor: pointer;
+                h2 {
+                    color: rgb(253, 197, 136);
+                }
+            }
+        }
+        .right-container:hover + .details {
+            visibility: visible;
+        }
+
+
+        .details {
+            visibility: hidden;
+            line-height: 1.5;
+            background: rgba(222, 23, 108, 0.1);
+            &:hover {
+                visibility: visible;
+            }
+        }
+    }
+}
+
+.center {
+    text-align: center;
+    .line {
+        background: white;
+        height: 90%;
+        width: 1px;
+    }
+}
+.line-container {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}

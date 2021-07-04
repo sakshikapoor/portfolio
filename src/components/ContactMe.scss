@@ -1,0 +1,36 @@
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 5em;
+
+    .my-footer-heading {
+        text-align: left;
+        margin-left: 0.5em;
+        width: fit-content;
+        cursor: pointer;
+        &:hover {
+            color: rgb(253, 197, 136);
+        }
+    }
+    .contact-info {
+        line-height: 1.5;
+    }
+}
+.links {
+    margin: 1em;
+    cursor: pointer;
+    transition: transform .2s;
+        &:hover {
+            transform: scale(1.2); 
+            z-index: 1;
+        }
+}
+.resume {
+    cursor: pointer;
+    color: #ff8eb1;
+    text-decoration: auto;
+    &:hover {
+        text-decoration: underline;
+    }
+}

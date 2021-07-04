@@ -1,0 +1,59 @@
+.main-project-wrapper {
+    padding: 2em 5em;
+    .my-project-heading {
+        text-align: left;
+        margin-left: 0.5em;
+        width: fit-content;
+        cursor: pointer;
+        &:hover {
+            color: rgb(253, 197, 136);
+        }
+    }
+    .projects-container {
+        display: flex;
+        overflow-x: scroll;
+        padding: 2em 0;
+    }
+}
+
+
+.project-wrapper {
+    min-width: 15em;
+    margin: 1em;
+    position: relative;
+    padding: 2em;
+    min-height: 7em;
+    &:hover {
+        background: rgba(222,23,108,0.1);
+        border-radius: 10px;
+    }
+    .heading {
+        text-transform: uppercase;
+        font-weight: 800;
+        line-height: 1.5;
+        font-size: 1.1em;
+    }
+    .description {
+        font-size: 0.9em;
+        text-align: start;
+        margin: 0.5em 0;
+        overflow: hidden;
+    }
+    .url {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        cursor: pointer;
+        padding: 0.8em;
+        background: #1b0f4a;
+        color: white;
+        border: 1px solid white;
+        border-radius: 5px;
+        transform: translate(-1em, -1em);
+        &:hover {
+            color: white;
+            background: rgb(222,23,108);
+            border: 1px solid rgb(222,23,108);
+        }
+    }
+}

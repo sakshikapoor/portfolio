@@ -1,0 +1,28 @@
+.aboutme-wrapper {
+    display: flex;
+    .left-container {
+        width: 60%;
+        margin: 2em 4em;
+        text-align: left;
+            .main-heading {
+                font-size: 3em;
+                width: fit-content;
+                font-weight: 800;
+                line-height: 1.5em;
+                &:hover {
+                    color: rgb(253, 197, 136);
+                }
+            }
+            .description {
+                font-size: 1.5em;
+                color: #d5d2ff;
+                max-width: 30em;
+                span:hover {
+                    text-shadow: 0 0 10px #fff,
+                    0 0 20px #fff, 
+                    0 0 40px #fff;
+                }
+            }
+    }
+
+}
